@@ -7,3 +7,5 @@
 * code/machine_learning 运行得到机器学习算法的结果
 
 * code/target_process_no_baseDNN 运行得到不使用迁移学习的结果
+
+* code/target_ratio: 训练数据为25, 50, 75, 100的结果对比(有迁移学习 vs 无迁移学习), 需要先运行split_data.py划分数据，然后运行train_target.py, 最后运行draw.py得到图形对比结果
