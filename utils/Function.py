@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import r2_score
 
 # 项目所在根目录
-pro_path = "C:/Users/WXX/Desktop/vocation/method2/project/"
+pro_path = "C:/Users/WXX/Desktop/MDC-AN/"
 
 # 输入的组合方式
 search_lists = [
@@ -20,32 +20,32 @@ search_lists = [
 ]
 
 # train_base_model.py 训练基模型参数
-# train_base_model_params = [
-#     [16, 32, 64, 128],  # 每次送入的数据量
-#     [0.001, 0.005, 0.01],  # 学习率
-#     ["glorot_normal", "glorot_uniform", "random_normal"],
-#     [10, 20, 40, 80],  # 不同训练epochs
-# ]
-train_base_model_params = [  # for test
-    [64, 128],  # 每次送入的数据量
-    [0.001, 0.005],  # 学习率
-    ["glorot_normal", "glorot_uniform"],
-    [10, 20],  # 不同训练epochs
+train_base_model_params = [
+    [16, 32, 64, 128],  # 每次送入的数据量
+    [0.001, 0.005, 0.01],  # 学习率
+    ["glorot_normal", "glorot_uniform", "random_normal"],
+    [10, 20, 40, 80],  # 不同训练epochs
 ]
+# train_base_model_params = [  # for test
+#     [64, 128],  # 每次送入的数据量
+#     [0.001, 0.005],  # 学习率
+#     ["glorot_normal", "glorot_uniform"],
+#     [10, 20],  # 不同训练epochs
+# ]
 
 # train_target.py 迁移学习寻优参数
-# train_target_params = [
-#     [16, 32],  # 每次送入的数据量
-#     [0.0001, 0.0005, 0.001, 0.0025],  # 学习率
-#     [50, 100, 150, 200, 250, 300, 350, 400],  # 不同训练epochs
-#     [10, 10],  # outer_CV_times, inner_CV_times
-# ]
-train_target_params = [  # for test
+train_target_params = [
     [16, 32],  # 每次送入的数据量
-    [0.0001, 0.0005],  # 学习率
-    [50, 100],  # 不同训练epochs
-    [2, 2],  # outer_CV_times, inner_CV_times
+    [0.0001, 0.0005, 0.001, 0.0025],  # 学习率
+    [50, 100, 150, 200, 250, 300, 350, 400],  # 不同训练epochs
+    [10, 10],  # outer_CV_times, inner_CV_times
 ]
+# train_target_params = [  # for test
+#     [16, 32],  # 每次送入的数据量
+#     [0.0001, 0.0005],  # 学习率
+#     [50, 100],  # 不同训练epochs
+#     [2, 2],  # outer_CV_times, inner_CV_times
+# ]
 
 # machine learning
 # lasso
